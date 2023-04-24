@@ -42,6 +42,8 @@ def _dataconvert(args):
         intype = args.format
     else:
         intype = guess_type(args.inpath)
+
+    print('Type of input file: ', intype)
         
     # What is the type of output file?
     outtype = guess_type(args.outpath)
