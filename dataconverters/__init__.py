@@ -30,10 +30,12 @@ def dataconvert(inpath, outpath,
     args = AttrDict(locals())
     _dataconvert(args)
 
-# HACK: args can come either from CLI in which case not dict and has
-# attribute OR can come from normal client user in which case we need
-# attribute style access
 def _dataconvert(args):
+    '''
+    HACK: args can come either from CLI in which case not dict and has
+    attribute OR can come from normal client user in which case we need
+    attribute style access  
+    '''
     
     # What is the type of input file?
     if args.format:
