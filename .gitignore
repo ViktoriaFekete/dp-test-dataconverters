@@ -6,3 +6,4 @@ build
 .*.swp
 sandbox/*
 _site/*
+.kmu-sphinx-venv
