@@ -1,5 +1,5 @@
 import argparse
-from dataconverters import _dataconvert
+from dataconverters import my_dataconvert
 
 def make_argparser():
     parser = argparse.ArgumentParser(description=\
@@ -52,5 +52,5 @@ Part of the DataConverters project: https://github.com/okfn/dataconverters''',
 def main():
     parser = make_argparser()
     args = parser.parse_args()
-    _dataconvert(args)
+    my_dataconvert(args)
 
