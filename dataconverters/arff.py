@@ -14,6 +14,9 @@ class ARFF:
         return self.header + self.data
     
     def _to_arff_type(self, attr_type):
+        '''
+        type comparison
+        '''
         if attr_type == 'String':
             return 'STRING'
         elif attr_type == 'Integer':
@@ -24,6 +27,8 @@ class ARFF:
             return 'NUMERIC'
         elif attr_type == 'DateTime':
             return 'DATE'
+        else:
+            return None
             
     def _to_arff_data(self, attr_val, attr_type):
         if not attr_val:
