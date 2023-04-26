@@ -131,6 +131,7 @@ def manipulate_data(data, target_type, operation):
 
 
 def f(lst):
+    # doc
     n = len(lst)
     i, j = 0, n-1
     while i < n and j >= 0:

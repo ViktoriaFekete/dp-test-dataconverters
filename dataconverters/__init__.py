@@ -35,6 +35,8 @@ def dataconvert(inpath, outpath,
 # attribute style access
 def my_dataconvert(args):
     
+    #doc 
+
     # What is the type of input file?
     if args.format:
         intype = args.format
