@@ -100,7 +100,7 @@ class DateEncoder(json.JSONEncoder):
 def csv_to_json(stream, **kwargs):
     '''TODO: document output format'''
     iterator, metadata = parse(stream, **kwargs)
-    # TODO: convert python types to json serializable stuff!
+    # TODO: types to json serializable stuff!
     # e.g. datetimes to isoformat strings etc
     out = json.dumps(
         {
