@@ -42,6 +42,7 @@ def calculate_grade(score):
 
 
 def convert_data(data, target_type):
+
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
@@ -75,6 +76,11 @@ def manipulate_data(data, target_type, operation):
     '''
     komentar voxwise 
     '''
+
+    if not isinstance(data, (list, tuple)):
+        print("Error: input data must be a list or tuple")
+        return
+    
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
