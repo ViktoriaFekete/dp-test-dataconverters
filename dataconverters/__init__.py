@@ -34,6 +34,8 @@ def dataconvert(inpath, outpath,
 # attribute OR can come from normal client user in which case we need
 # attribute style access
 def my_dataconvert(args):
+    '''DOC
+    '''
     
     # What is the type of input file?
     if args.format:
