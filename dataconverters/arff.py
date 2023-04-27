@@ -13,6 +13,7 @@ class ARFF:
     def __str__(self):
         return self.header + self.data
     
+    # nothing
     def _to_arff_type(self, attr_type):
         if attr_type == 'String':
             return 'STRING'

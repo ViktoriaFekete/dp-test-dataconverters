@@ -30,6 +30,7 @@ def dataconvert(inpath, outpath,
     args = AttrDict(locals())
     my_dataconvert(args)
 
+# docs, refactor
 # HACK: args can come either from CLI in which case not dict and has
 # attribute OR can come from normal client user in which case we need
 # attribute style access
