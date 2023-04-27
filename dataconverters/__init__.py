@@ -33,13 +33,17 @@ def dataconvert(inpath, outpath,
 # HACK: args can come either from CLI in which case not dict and has
 # attribute OR can come from normal client user in which case we need
 # attribute style access
+# Refactor if possible, otherwise add documentation
 def my_dataconvert(args):
-    
+    '''
+    uz je dobre
+    '''
     # What is the type of input file?
     if args.format:
         intype = args.format
     else:
         intype = guess_type(args.inpath)
+        print("ahoj")
         
     # What is the type of output file?
     outtype = guess_type(args.outpath)

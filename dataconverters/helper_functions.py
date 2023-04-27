@@ -70,8 +70,11 @@ def convert_data(data, target_type):
     
     return converted_data
 
-
+# Refactoring
 def manipulate_data(data, target_type, operation):
+    '''
+    Toto je super funkcia ktorej rozumiem iba ja.
+    '''
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
