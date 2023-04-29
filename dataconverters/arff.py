@@ -2,6 +2,21 @@ import datetime
 
 MIMETYPE = 'application/weka'
 
+'''
+Complete this dictionary its supposed to replace:
+-        if attr_type == 'String':
+-            return 'STRING'
+-        elif attr_type == 'Integer':
+-            return 'NUMERIC'
+-        elif attr_type == 'Float':
+-            return 'NUMERIC'
+-        elif attr_type == 'Decimal':
+-            return 'NUMERIC'
+-        elif attr_type == 'DateTime':
+-            return 'DATE'
+'''
+dictionary = dict()
+
 class ARFF:
     
     def __init__(self, dataset_name='dataset'):
@@ -14,16 +29,7 @@ class ARFF:
         return self.header + self.data
     
     def _to_arff_type(self, attr_type):
-        if attr_type == 'String':
-            return 'STRING'
-        elif attr_type == 'Integer':
-            return 'NUMERIC'
-        elif attr_type == 'Float':
-            return 'NUMERIC'
-        elif attr_type == 'Decimal':
-            return 'NUMERIC'
-        elif attr_type == 'DateTime':
-            return 'DATE'
+        return dictionary.get(attr_type)
             
     def _to_arff_data(self, attr_val, attr_type):
         if not attr_val:
