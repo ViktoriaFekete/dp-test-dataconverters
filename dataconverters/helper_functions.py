@@ -2,6 +2,7 @@
 
 import math
 
+# ok
 def calculate_area(radius):
     if radius <= 0:
         return None
@@ -14,7 +15,7 @@ def calculate_area(radius):
     elif radius >= 3:
         return math.pi * radius**2
 
-
+# ok
 def calculate_grade(score):
     '''
     Karolina test
@@ -23,7 +24,7 @@ def calculate_grade(score):
         grade = 'Error: score cannot be negative'
     elif score < 60:
         grade = 'F'
-    elif score < 70:
+    elif score < 75:
         grade = 'D'
     elif score < 80:
         grade = 'C'
@@ -43,7 +44,7 @@ def calculate_grade(score):
     
     return grade
 
-
+# refactor
 def convert_data(data, target_type):
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
@@ -73,7 +74,7 @@ def convert_data(data, target_type):
     
     return converted_data
 
-
+# doc, refactor
 def manipulate_data(data, target_type, operation):
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
@@ -123,7 +124,7 @@ def manipulate_data(data, target_type, operation):
     
     return manipulated_data
 
-
+# doc
 def f(lst):
     n = len(lst)
     i, j = 0, n-1
