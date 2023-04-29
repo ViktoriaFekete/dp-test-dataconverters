@@ -16,6 +16,9 @@ def calculate_area(radius):
 
 
 def calculate_grade(score):
+    '''
+    Karolina test
+    '''
     if score < 0:
         grade = 'Error: score cannot be negative'
     elif score < 60:
