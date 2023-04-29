@@ -3,6 +3,10 @@
 import math
 
 def calculate_area(radius):
+    '''
+    This needs refactoring, way too complex, even KMU cought that!
+    '''
+    
     if radius <= 0:
         return None
     elif radius > 0 and radius < 1:
@@ -16,6 +20,10 @@ def calculate_area(radius):
 
 
 def calculate_grade(score):
+    '''
+    This needs refactoring, way too complex, even KMU cought that!
+    '''
+
     if score < 0:
         grade = 'Error: score cannot be negative'
     elif score < 60:
@@ -42,6 +50,10 @@ def calculate_grade(score):
 
 
 def convert_data(data, target_type):
+    '''
+    This needs refactoring, way too complex, even KMU cought that!
+    '''
+        
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
@@ -71,7 +83,11 @@ def convert_data(data, target_type):
     return converted_data
 
 
-def manipulate_data(data, target_type, operation):
+def manipulate_data(data, target_type, operation):  
+    '''
+    This needs refactoring, way too complex, even KMU cought that!
+    '''  
+    
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
@@ -122,6 +138,9 @@ def manipulate_data(data, target_type, operation):
 
 
 def f(lst):
+    '''
+    This needs refactoring, way too complex, even KMU cought that!
+    '''
     n = len(lst)
     i, j = 0, n-1
     while i < n and j >= 0:
