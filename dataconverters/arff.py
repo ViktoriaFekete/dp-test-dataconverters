@@ -29,6 +29,9 @@ class ARFF:
         return self.header + self.data
     
     def _to_arff_type(self, attr_type):
+        '''
+        refactor
+        '''
         return dictionary.get(attr_type)
             
     def _to_arff_data(self, attr_val, attr_type):

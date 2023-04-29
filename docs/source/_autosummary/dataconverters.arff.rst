@@ -1,9 +1,16 @@
-dataconverters.arff
+﻿dataconverters.arff
 ===================
 
 .. automodule:: dataconverters.arff
 
    
+   
+   .. rubric:: Module attributes
+
+   .. autosummary::
+      :toctree:
+   
+      MIMETYPE
    
    
 
