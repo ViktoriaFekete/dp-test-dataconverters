@@ -1,7 +1,7 @@
 # This file contains random complex functions to test out extension
 
 import math
-
+#ok
 def calculate_area(radius):
     if radius <= 0:
         return None
@@ -14,22 +14,20 @@ def calculate_area(radius):
     elif radius >= 3:
         return math.pi * radius**2
 
-
+#ok
 def calculate_grade(score):
+    '''
+    vololo vololo
+    '''
     if score < 0:
         grade = 'Error: score cannot be negative'
     elif score < 60:
-        grade = 'F'
+        grade = 'B'
     elif score < 70:
         grade = 'D'
     elif score < 80:
         grade = 'C'
-    elif score < 90:
-        grade = 'B'
-    elif score <= 100:
-        grade = 'A'
-    else:
-        grade = 'Error: score cannot be greater than 100'
+
     
     if grade == 'A':
         print('Excellent!')
@@ -40,10 +38,11 @@ def calculate_grade(score):
     
     return grade
 
-
+#ok
 def convert_data(data, target_type):
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
+        print("volo")
         return
     
     if target_type not in [int, float, str]:
@@ -71,6 +70,7 @@ def convert_data(data, target_type):
     return converted_data
 
 
+#ref
 def manipulate_data(data, target_type, operation):
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
@@ -120,7 +120,7 @@ def manipulate_data(data, target_type, operation):
     
     return manipulated_data
 
-
+#refactor
 def f(lst):
     n = len(lst)
     i, j = 0, n-1
