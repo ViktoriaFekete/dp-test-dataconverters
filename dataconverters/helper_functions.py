@@ -72,6 +72,10 @@ def convert_data(data, target_type):
 
 
 def manipulate_data(data, target_type, operation):
+    '''
+    refaktoring
+    Manipulate data by adding, subtracting, or multiplying
+    '''
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return

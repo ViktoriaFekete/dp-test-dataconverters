@@ -34,6 +34,7 @@ def dataconvert(inpath, outpath,
 # attribute OR can come from normal client user in which case we need
 # attribute style access
 def my_dataconvert(args):
+    # dokumentacia - min na argumenty
     
     # What is the type of input file?
     if args.format:
@@ -43,6 +44,7 @@ def my_dataconvert(args):
         
     # What is the type of output file?
     outtype = guess_type(args.outpath)
+    print("test")
     
     # If outtype is ARFF then we need to guess field-types.
     # Thus we overwrite the args.guess_types to True.
