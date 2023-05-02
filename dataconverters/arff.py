@@ -14,6 +14,10 @@ class ARFF:
         return self.header + self.data
     
     def _to_arff_type(self, attr_type):
+        '''
+        hocico
+        '''
+        
         if attr_type == 'String':
             return 'STRING'
         elif attr_type == 'Integer':
