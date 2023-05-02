@@ -71,6 +71,7 @@ def convert_data(data, target_type):
     return converted_data
 
 
+# doc
 def manipulate_data(data, target_type, operation):
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
@@ -120,7 +121,7 @@ def manipulate_data(data, target_type, operation):
     
     return manipulated_data
 
-
+# K tejto funkcii by som pridal dokumentaciu
 def f(lst):
     n = len(lst)
     i, j = 0, n-1
