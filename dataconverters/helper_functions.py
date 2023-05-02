@@ -3,6 +3,7 @@
 import math
 
 def calculate_area(radius):
+   
     if radius <= 0:
         return None
     elif radius > 0 and radius < 1:
@@ -42,6 +43,8 @@ def calculate_grade(score):
 
 
 def convert_data(data, target_type):
+    print("test")
+    
     if not isinstance(data, (list, tuple)):
         print("Error: input data must be a list or tuple")
         return
